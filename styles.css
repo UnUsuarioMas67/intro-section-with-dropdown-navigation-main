@@ -1,0 +1,218 @@
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+
+    --wgt-500: 500;
+    --wgt-700: 700;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font: inherit;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--almost-white);
+}
+
+.nav-button {
+    display: block;
+    
+    color: var(--medium-gray);
+    text-decoration: none;
+    padding: .75rem 0.6rem;
+    cursor: pointer; 
+}
+
+.nav-button:hover {
+    color: var(--almost-black);
+}
+
+.nav-button.register {
+    border: 2px solid var(--medium-gray);
+    border-radius: 10px;
+
+    margin: 0.5rem;
+}
+
+.nav-button.register:hover {
+    border-color: var(--almost-black);
+}
+
+/* --------------------------------- Navigation Bar --------------------------------- */
+
+#exit-button, #burger-button {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1.5rem 1rem;
+}
+
+.nav-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.darker-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: var(--almost-black);
+    opacity: 0.5;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    position: relative;
+    z-index: 999;
+
+    min-width: 250px;
+    min-height: 100vh;
+
+    padding: 1rem;
+
+    background-color: var(--almost-white);
+}
+
+.align-right {
+    display: grid;
+    place-items: end;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.dropdown-list li {
+    margin-left: 1.5rem;
+}
+
+.dropdown-list ul {
+    display: none;
+}
+
+.dropdown-list.active ul {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.nav-button.icon {
+    display: flex;
+    gap: .9rem;
+}
+
+.secondary-nav {
+    text-align: center;
+}
+
+.secondary-nav .nav-button {
+    font-size: 15px;
+}
+
+/* --------------------------------- Navigation Bar --------------------------------- */
+
+
+/* --------------------------------- Hero Section --------------------------------- */
+section {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-img {
+    flex: 1 0 300px;
+    text-align: center;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero-section {
+    flex: 1 0 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    text-align: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 0 1rem;
+}
+
+h1 {
+    color: var(--almost-black);
+    font-weight: var(--wgt-700);
+    font-size: 2.2em;
+}
+
+p {
+    color: var(--medium-gray);
+    font-weight: var(--wgt-500);
+    line-height: 1.5rem;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+
+    padding: 0.8rem 1.2rem;
+    border: 2px solid var(--almost-black);
+    border-radius: 1rem;
+
+    width: fit-content;
+}
+
+.cta-button:hover {
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-section img {
+    object-fit: contain;
+}
+
+/* --------------------------------- Hero Section --------------------------------- */
