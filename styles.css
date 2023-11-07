@@ -69,6 +69,11 @@ nav > ul {
 	padding: 0.5rem;
 }
 
+.nav__button > a img {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
 .nav__button.dropdown {
 	position: relative;
 }
@@ -377,10 +382,6 @@ img[src="images/image-hero-mobile.png"] {
 		font-size: 3.5rem;
 	}
 
-	.client-logos {
-		gap: 1rem;
-	}
-
 	.client-logos img {
 		object-fit: scale-down;
 	}
@@ -445,6 +446,7 @@ img[src="images/image-hero-mobile.png"] {
 	.client-logos {
 		margin: auto;
 		max-width: 600px;
+		gap: 1rem;
 	}
 
 	section:last-child {
